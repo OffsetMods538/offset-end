@@ -9,7 +9,7 @@ import static top.offsetmonkey538.offsetend.OffsetEnd.id;
 public class ModBlocks {
 
 
-    private static Block register(Block block, String name) {
+    private static <T extends Block> T register(String name, T block) {
         return Registry.register(Registries.BLOCK, id(name), block);
     }
 
