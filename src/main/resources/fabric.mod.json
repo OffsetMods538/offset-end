@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "offset-end",
+	"version": "${modVersion}",
+	"name": "OffsetEnd538",
+	"description": "Adds cool stuff to the end",
+	"authors": [
+		"OffsetMonkey538"
+	],
+	"contact": {
+		"sources": "https://github.offsetmonkey538.top/offset-end"
+	},
+	"license": "MIT",
+	"icon": "assets/offset-end/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"top.offsetmonkey538.offsetend.OffsetEnd"
+		],
+		"client": [
+			"top.offsetmonkey538.offsetend.OffsetEndClient"
+		],
+		"preLaunch": [
+			"com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
+		]
+	},
+	"mixins": [
+		"offset-end.mixins.json",
+		{
+			"config": "offset-end.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"accessWidener": "offset-end.accesswidener",
+	"depends": {
+		"minecraft": "${supportedMinecraftVersions}"
+	}
+}
