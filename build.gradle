@@ -30,6 +30,30 @@ loom {
 	}
 	
 	accessWidenerPath = file("src/main/resources/offset-end.accesswidener")
+
+	runs {
+		datagenClient {
+			inherit client
+
+			name "Data Generation"
+
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+			vmArg "-Dfabric-api.datagen.modid=offset-end"
+
+			runDir "build/datagen"
+		}
+	}
+}
+
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+			        "src/main/generated"
+			]
+		}
+	}
 }
 
 configurations {
@@ -51,7 +75,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Uncomment for fabric api
-	// modimplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	// Uncomment for including a module of fabric api
 	// includeModImplementation fabricApi.module("fabric-api-base", project.fabric_api_version)
