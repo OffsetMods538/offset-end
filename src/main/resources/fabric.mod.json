@@ -21,7 +21,7 @@
 			"top.offsetmonkey538.offsetend.OffsetEndClient"
 		],
 		"fabric-datagen": [
-			"top.offsetmonkey538.offsetend.DataGeneration"
+            "top.offsetmonkey538.offsetend.datagen.DataGeneration"
 		],
 		"preLaunch": [
 			"com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
