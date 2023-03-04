@@ -112,7 +112,3 @@ jar {
 		rename { "${it}_${project.archivesBaseName}" }
 	}
 }
-
-build {
-	dependsOn runDatagenClient
-}
