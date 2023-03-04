@@ -1,4 +1,4 @@
-package top.offsetmonkey538.offsetend.datagen;
+package top.offsetmonkey538.offsetend.datagen.tag;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
