@@ -21,5 +21,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.END_MUSHROOM_STEW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.END_WATER_BUCKET,  Models.GENERATED);
     }
 }
