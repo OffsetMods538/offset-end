@@ -13,9 +13,10 @@ public class ModEnglishLanguageProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
-        translationBuilder.add(ModBlocks.END_MUSHROOM, "End Mushroom");
+        translationBuilder.add(ModBlocks.END_MUSHROOM,        "End Mushroom");
 
-        translationBuilder.add(ModItems.END_MUSHROOM_STEW, "End Mushroom Stew");
+        translationBuilder.add(ModItems.END_MUSHROOM_STEW,    "End Mushroom Stew");
+        translationBuilder.add(ModItems.END_WATER_BUCKET,     "End Water Bucket");
 
         translationBuilder.add(ModStatusEffects.END_AFFINITY, "End Affinity");
     }
