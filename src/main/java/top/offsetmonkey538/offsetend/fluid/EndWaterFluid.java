@@ -8,6 +8,8 @@ import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -16,12 +18,19 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
+import java.util.Optional;
+
 import static top.offsetmonkey538.offsetend.registry.ModBlocks.END_WATER;
 import static top.offsetmonkey538.offsetend.registry.ModFluids.FLOWING_END_WATER;
 import static top.offsetmonkey538.offsetend.registry.ModFluids.STILL_END_WATER;
 import static top.offsetmonkey538.offsetend.registry.ModItems.END_WATER_BUCKET;
 
 public abstract class EndWaterFluid extends FlowableFluid {
+
+    @Override
+    public Optional<SoundEvent> getBucketFillSound() {
+        return Optional.ofNullable(SoundEvents.ITEM_BUCKET_FILL);
+    }
 
     @Override
     public Fluid getStill() {
