@@ -2,17 +2,22 @@ package top.offsetmonkey538.offsetend.fluid;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
+import net.minecraft.particle.ParticleEffect;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
@@ -26,6 +31,18 @@ import static top.offsetmonkey538.offsetend.fluid.ModFluids.STILL_END_WATER;
 import static top.offsetmonkey538.offsetend.item.ModItems.END_WATER_BUCKET;
 
 public abstract class EndWaterFluid extends FlowableFluid {
+
+    @Override
+    protected ParticleEffect getParticle() {
+        return ParticleTypes.PORTAL;
+    }
+
+    @Override
+    protected void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {
+        if (!state.isStill() || world.getBlockState(pos.up()).isOf(Blocks.AIR)) return;
+        if (random.nextInt(10) == 0) world.addParticle(getParticle(), (double)pos.getX() + random.nextDouble(), (double)pos.getY() + random.nextDouble(), (double)pos.getZ() + random.nextDouble(), 0.0, 0.0, 0.0);
+        else if (random.nextInt(256) == 0) world.playSound((double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5, SoundEvents.ENTITY_ENDERMITE_HURT, SoundCategory.BLOCKS, random.nextFloat() * 0.25f + 0.50f, random.nextFloat() + 0.5f, false);
+    }
 
     @Override
     public Optional<SoundEvent> getBucketFillSound() {
