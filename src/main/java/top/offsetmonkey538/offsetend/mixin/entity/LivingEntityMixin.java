@@ -7,7 +7,7 @@ import net.minecraft.entity.mob.ShulkerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import top.offsetmonkey538.offsetend.registry.ModStatusEffects;
+import top.offsetmonkey538.offsetend.entity.effect.ModStatusEffects;
 
 @Mixin(LivingEntity.class)
 public class LivingEntityMixin {

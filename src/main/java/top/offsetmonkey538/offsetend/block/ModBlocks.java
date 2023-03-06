@@ -1,10 +1,10 @@
-package top.offsetmonkey538.offsetend.registry;
+package top.offsetmonkey538.offsetend.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import top.offsetmonkey538.offsetend.block.EndMushroomBlock;
+import top.offsetmonkey538.offsetend.fluid.ModFluids;
 
 import static top.offsetmonkey538.offsetend.OffsetEnd.id;
 

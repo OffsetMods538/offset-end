@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import top.offsetmonkey538.offsetend.registry.ModBlocks;
+import top.offsetmonkey538.offsetend.block.ModBlocks;
 
 import java.util.concurrent.CompletableFuture;
 

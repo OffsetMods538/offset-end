@@ -4,10 +4,10 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.offsetmonkey538.offsetend.registry.ModBlocks;
-import top.offsetmonkey538.offsetend.registry.ModFluids;
-import top.offsetmonkey538.offsetend.registry.ModItems;
-import top.offsetmonkey538.offsetend.registry.ModStatusEffects;
+import top.offsetmonkey538.offsetend.block.ModBlocks;
+import top.offsetmonkey538.offsetend.entity.effect.ModStatusEffects;
+import top.offsetmonkey538.offsetend.fluid.ModFluids;
+import top.offsetmonkey538.offsetend.item.ModItems;
 
 public class OffsetEnd implements ModInitializer {
 	public static final String MOD_ID = "offset-end";

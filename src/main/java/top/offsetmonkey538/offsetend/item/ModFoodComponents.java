@@ -2,7 +2,7 @@ package top.offsetmonkey538.offsetend.item;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.FoodComponent;
-import top.offsetmonkey538.offsetend.registry.ModStatusEffects;
+import top.offsetmonkey538.offsetend.entity.effect.ModStatusEffects;
 
 import static net.minecraft.item.FoodComponents.MUSHROOM_STEW;
 

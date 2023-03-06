@@ -6,8 +6,8 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
-import top.offsetmonkey538.offsetend.registry.ModBlocks;
-import top.offsetmonkey538.offsetend.registry.ModFluids;
+import top.offsetmonkey538.offsetend.block.ModBlocks;
+import top.offsetmonkey538.offsetend.fluid.ModFluids;
 
 public class OffsetEndClient implements ClientModInitializer {
 

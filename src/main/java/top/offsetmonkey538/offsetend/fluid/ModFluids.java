@@ -1,9 +1,8 @@
-package top.offsetmonkey538.offsetend.registry;
+package top.offsetmonkey538.offsetend.fluid;
 
 import net.minecraft.fluid.Fluid;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import top.offsetmonkey538.offsetend.fluid.EndWaterFluid;
 
 import static top.offsetmonkey538.offsetend.OffsetEnd.id;
 

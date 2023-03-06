@@ -1,9 +1,8 @@
-package top.offsetmonkey538.offsetend.registry;
+package top.offsetmonkey538.offsetend.entity.effect;
 
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import top.offsetmonkey538.offsetend.entity.effect.EndAffinityStatusEffect;
 
 import static top.offsetmonkey538.offsetend.OffsetEnd.id;
 

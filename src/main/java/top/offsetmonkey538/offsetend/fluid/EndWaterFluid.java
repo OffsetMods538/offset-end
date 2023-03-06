@@ -20,10 +20,10 @@ import net.minecraft.world.WorldView;
 
 import java.util.Optional;
 
-import static top.offsetmonkey538.offsetend.registry.ModBlocks.END_WATER;
-import static top.offsetmonkey538.offsetend.registry.ModFluids.FLOWING_END_WATER;
-import static top.offsetmonkey538.offsetend.registry.ModFluids.STILL_END_WATER;
-import static top.offsetmonkey538.offsetend.registry.ModItems.END_WATER_BUCKET;
+import static top.offsetmonkey538.offsetend.block.ModBlocks.END_WATER;
+import static top.offsetmonkey538.offsetend.fluid.ModFluids.FLOWING_END_WATER;
+import static top.offsetmonkey538.offsetend.fluid.ModFluids.STILL_END_WATER;
+import static top.offsetmonkey538.offsetend.item.ModItems.END_WATER_BUCKET;
 
 public abstract class EndWaterFluid extends FlowableFluid {
 

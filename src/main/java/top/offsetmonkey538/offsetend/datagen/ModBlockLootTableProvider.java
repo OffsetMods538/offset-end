@@ -2,8 +2,8 @@ package top.offsetmonkey538.offsetend.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import top.offsetmonkey538.offsetend.registry.ModBlocks;
-import top.offsetmonkey538.offsetend.registry.ModItems;
+import top.offsetmonkey538.offsetend.block.ModBlocks;
+import top.offsetmonkey538.offsetend.item.ModItems;
 
 public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
     public ModBlockLootTableProvider(FabricDataOutput dataOutput) {

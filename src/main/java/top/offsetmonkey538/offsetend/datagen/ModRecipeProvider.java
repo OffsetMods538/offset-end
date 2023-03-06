@@ -10,8 +10,8 @@ import java.util.function.Consumer;
 
 import static net.minecraft.item.Items.BOWL;
 import static net.minecraft.item.Items.ENDER_EYE;
-import static top.offsetmonkey538.offsetend.registry.ModItems.END_MUSHROOM;
-import static top.offsetmonkey538.offsetend.registry.ModItems.END_MUSHROOM_STEW;
+import static top.offsetmonkey538.offsetend.item.ModItems.END_MUSHROOM;
+import static top.offsetmonkey538.offsetend.item.ModItems.END_MUSHROOM_STEW;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) {

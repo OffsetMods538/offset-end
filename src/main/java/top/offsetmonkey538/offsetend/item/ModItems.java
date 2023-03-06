@@ -1,4 +1,4 @@
-package top.offsetmonkey538.offsetend.registry;
+package top.offsetmonkey538.offsetend.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -6,7 +6,8 @@ import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import top.offsetmonkey538.offsetend.item.EndMushroomStewItem;
+import top.offsetmonkey538.offsetend.block.ModBlocks;
+import top.offsetmonkey538.offsetend.fluid.ModFluids;
 
 import static top.offsetmonkey538.offsetend.OffsetEnd.id;
 

@@ -2,9 +2,9 @@ package top.offsetmonkey538.offsetend.datagen.language;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import top.offsetmonkey538.offsetend.registry.ModBlocks;
-import top.offsetmonkey538.offsetend.registry.ModItems;
-import top.offsetmonkey538.offsetend.registry.ModStatusEffects;
+import top.offsetmonkey538.offsetend.block.ModBlocks;
+import top.offsetmonkey538.offsetend.item.ModItems;
+import top.offsetmonkey538.offsetend.entity.effect.ModStatusEffects;
 
 public class ModEnglishLanguageProvider extends FabricLanguageProvider {
     public ModEnglishLanguageProvider(FabricDataOutput dataOutput) {
