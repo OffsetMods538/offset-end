@@ -18,6 +18,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_WATER_LAKE_KEY = register("end_water_lake");
 
 
+    @SuppressWarnings("deprecation")
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         register(context, END_WATER_LAKE_KEY, new ConfiguredFeature<>(
                 Feature.LAKE,
