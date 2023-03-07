@@ -7,10 +7,7 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
-import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
-import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
-import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
@@ -19,6 +16,7 @@ import static top.offsetmonkey538.offsetend.OffsetEnd.id;
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> END_WATER_LAKE_PLACED_KEY = register("end_water_lake_placed");
+    public static final RegistryKey<PlacedFeature> END_MUSHROOM_PLACED_KEY = register("end_mushroom_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -32,6 +30,16 @@ public class ModPlacedFeatures {
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of()
+        );
+
+        register(
+                context,
+                END_MUSHROOM_PLACED_KEY,
+                configuredFeatureLookup.getOrThrow(ModConfiguredFeatures.END_MUSHROOM_KEY),
+                SquarePlacementModifier.of(),
+                BiomePlacementModifier.of(),
+                RarityFilterPlacementModifier.of(2),
+                PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP
         );
     }
 
