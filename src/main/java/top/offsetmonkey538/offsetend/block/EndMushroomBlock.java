@@ -10,7 +10,7 @@ import net.minecraft.world.BlockView;
 public class EndMushroomBlock extends PlantBlock {
 
     public EndMushroomBlock() {
-        super(FabricBlockSettings.of(Material.PLANT, MapColor.BLACK).noCollision().sounds(BlockSoundGroup.GRASS).breakInstantly().nonOpaque());
+        super(FabricBlockSettings.of(Material.PLANT, MapColor.PURPLE).noCollision().sounds(BlockSoundGroup.GRASS).breakInstantly().nonOpaque().luminance(3));
     }
 
     @Override
