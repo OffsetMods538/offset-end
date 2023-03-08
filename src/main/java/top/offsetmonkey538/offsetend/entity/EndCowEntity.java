@@ -2,10 +2,12 @@ package top.offsetmonkey538.offsetend.entity;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.CowEntity;
+import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
 import net.minecraft.item.Items;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -51,5 +53,10 @@ public class EndCowEntity extends CowEntity {
     @Override
     public boolean isBreedingItem(ItemStack stack) {
         return stack.isOf(Items.CHORUS_FRUIT);
+    }
+
+    @Override
+    public CowEntity createChild(ServerWorld serverWorld, PassiveEntity passiveEntity) {
+        return ModEntityTypes.END_COW.create(serverWorld);
     }
 }
