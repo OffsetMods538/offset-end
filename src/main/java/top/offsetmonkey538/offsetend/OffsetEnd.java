@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import top.offsetmonkey538.offsetend.block.ModBlocks;
+import top.offsetmonkey538.offsetend.entity.ModEntityTypes;
 import top.offsetmonkey538.offsetend.entity.effect.ModStatusEffects;
 import top.offsetmonkey538.offsetend.fluid.ModFluids;
 import top.offsetmonkey538.offsetend.item.ModItems;
@@ -25,6 +26,7 @@ public class OffsetEnd implements ModInitializer {
 		ModItems.register();
 		ModStatusEffects.register();
 		ModFluids.register();
+		ModEntityTypes.register();
 
 		ModWorldGeneration.generate();
 

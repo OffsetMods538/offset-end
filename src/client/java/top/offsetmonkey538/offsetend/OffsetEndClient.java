@@ -4,15 +4,25 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 import top.offsetmonkey538.offsetend.block.ModBlocks;
+import top.offsetmonkey538.offsetend.render.entity.EndCowEntityRenderer;
+import top.offsetmonkey538.offsetend.render.entity.model.ModEntityModelLayers;
+import top.offsetmonkey538.offsetend.entity.ModEntityTypes;
 import top.offsetmonkey538.offsetend.fluid.ModFluids;
 
 public class OffsetEndClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
+		ModEntityModelLayers.register();
+
+
+		EntityRendererRegistry.register(ModEntityTypes.END_COW, EndCowEntityRenderer::new);
+
+
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.END_MUSHROOM, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_END_MUSHROOM, RenderLayer.getCutout());
 
