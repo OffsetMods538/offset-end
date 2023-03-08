@@ -51,11 +51,6 @@ public class EndCowEntity extends CowEntity {
     }
 
     @Override
-    public boolean isBreedingItem(ItemStack stack) {
-        return stack.isOf(Items.CHORUS_FRUIT);
-    }
-
-    @Override
     public CowEntity createChild(ServerWorld serverWorld, PassiveEntity passiveEntity) {
         return ModEntityTypes.END_COW.create(serverWorld);
     }
