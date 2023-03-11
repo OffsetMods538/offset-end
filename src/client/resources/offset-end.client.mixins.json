@@ -3,7 +3,8 @@
 	"package": "top.offsetmonkey538.offsetend.mixin.client",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-        "render.BackgroundRendererMixin"
+		"render.BackgroundRendererMixin",
+		"render.InGameOverlayRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
