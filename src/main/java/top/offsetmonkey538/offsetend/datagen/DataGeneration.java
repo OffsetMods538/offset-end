@@ -6,6 +6,7 @@ import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import top.offsetmonkey538.offsetend.datagen.language.ModEnglishLanguageProvider;
 import top.offsetmonkey538.offsetend.datagen.tag.ModBlockTagProvider;
+import top.offsetmonkey538.offsetend.datagen.tag.ModFluidTagProvider;
 import top.offsetmonkey538.offsetend.world.feature.ModConfiguredFeatures;
 import top.offsetmonkey538.offsetend.world.feature.ModPlacedFeatures;
 
@@ -22,6 +23,7 @@ public class DataGeneration implements DataGeneratorEntrypoint {
 
         // Tags
         pack.addProvider(ModBlockTagProvider::new);
+        pack.addProvider(ModFluidTagProvider::new);
 
         // Language
         pack.addProvider(ModEnglishLanguageProvider::new);
