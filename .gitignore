@@ -6,6 +6,8 @@ classes
 
 # Fabric
 run/
+# Datagen
+src/main/generated
 
 # Java
 hs_err_*.log
